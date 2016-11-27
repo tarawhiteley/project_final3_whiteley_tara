@@ -13,20 +13,22 @@
 <nav>
     <h2 class="hidden">Navigation</h2>
     <ul>
-        <a href="#menu"><li>What's Cookin'</li></a><!-- Menu with apps, entrees, beverages, desserts -->
-        <a href="#events"><li>The Twist'n Bash</li></a><!-- Events -->
-        <a href="#promo"><li>World Famous $5 Milkshake</li></a><!-- Ongoing promotion -->
-        <a href="#reservations"><li>Pick Your Ride</li></a><!-- Reservations -->
-        <a href="#connect"><li>Let's Hang</li></a><!-- Location, hours, email, phone, social -->
+        <a href="#menu" class="smoothScroll"><li>What's Cookin'</li></a><!-- Menu with apps, entrees, beverages, desserts -->
+        <a href="#events" class="smoothScroll"><li>The Twist'n Bash</li></a><!-- Events -->
+        <a href="#promo" class="smoothScroll"><li>World Famous $5 Milkshake</li></a><!-- Ongoing promotion -->
+        <a href="#reservations" class="smoothScroll"><li>Reserve Your Ride</li></a><!-- Reservations -->
+        <a href="#connect" class="smoothScroll"><li>Let's Hang</li></a><!-- Location, hours, email, phone, social -->
     </ul>
 </nav>
 
-<section>
-    <h1>Jack Rabbit Slim's</h1>
-    <img src="img/logo.png" alt="logo" title="Jack Rabbit Slim's">
+<header>
+    <h1 class="hidden">Jack Rabbit Slim's</h1>
+    <img src="img/logo-no-tag.png" alt="logo" title="Jack Rabbit Slim's" id="top">
     <p>Welcome to <span class="bold">Jack Rabbit Slim's, The Next Best Thing to a Time Machine </span>where only the hipest Daddy-O's and Dollies come for good food and a good time!</p>
-</section>
+    <hr>
+</header>
 
+<div id="container">
 <section>
     <h2 id="menu">What's Cookin'</h2>
     <article>
@@ -156,7 +158,13 @@
     </article>
 </section>
 
+<footer>
+    <a href="#top" class="smoothScroll"><img src="img/arrow.png" alt="jump to top" title="Jump to Top"></a>
+</footer>
+</div>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
