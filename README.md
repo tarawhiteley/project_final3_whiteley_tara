@@ -15,19 +15,25 @@
 
 - [Custom Javascript]()
 
-- [Custom jQuery]()
+- [Custom jQuery](https://ufl.instructure.com/courses/330762/pages/jquery-events-and-effects?module_item_id=6205801)
+
+    - My custom jQuery for this project is the more/less buttons in the menu item descriptions. With the help of rewatching our lecture, I was able to use 'this' to toggle between showing or hiding (default) the description and price of each menu item. I also used the slideDown/slideUp effect and added/removed a class to the entire article.
+    
 
 - [Smooth Scroll](http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-your-webpages/)
 
     - I used this for my last project, so I realize it will not count for my jQuery requirement, but I prefer my sites to have a Smooth Scroll feature.
 
+
 - [Quentin Tarantino Wiki](http://wiki.tarantino.info/index.php/Jackrabbit_Slim%27s_Menu)
 
     - This site provided information about the menu for Jack Rabbit Slim's restaurant in the movie Pulp Fiction.
 
+
 - [Filming Locations Website](http://www.iamnotastalker.com/2011/03/10/jack-rabbit-slims-restaurant-from-pulp-fiction/)
 
     - This site provided me with the actual address of the building used as the exterior of Jack Rabbit Slim's restaurant. I used that address for the address of my restaurant on my website.
+
 
 - [Fifties Slang](http://fiftiesweb.com/pop/1950s-slang/)
 
