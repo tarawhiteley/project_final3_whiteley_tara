@@ -9,7 +9,9 @@
 
 ## Resources
 
-- [jQuery 1]()
+- [jQuery 1](https://github.com/pixelcog/parallax.js/)
+
+    - My first jQuery plugin adds parallax scrolling to the site. My background images made it hard to see the text so I used this plugin to add interest while using simple gray backgrounds for the text sections.
 
 - [jQuery 2]()
 
@@ -18,7 +20,7 @@
 - [Custom jQuery](https://ufl.instructure.com/courses/330762/pages/jquery-events-and-effects?module_item_id=6205801)
 
     - My custom jQuery for this project is the more/less buttons in the menu item descriptions. With the help of rewatching our lecture, I was able to use 'this' to toggle between showing or hiding (default) the description and price of each menu item. I also used the slideDown/slideUp effect and added/removed a class to the entire article.
-    
+
 
 - [Smooth Scroll](http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-your-webpages/)
 

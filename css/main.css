@@ -7,10 +7,6 @@ html {
     color: #fbca38;;
 }
 
-#container {
-    margin: 0 65px 0 10px;
-}
-
 /* fonts & sizing */
 @font-face {
     font-family: "jack";
@@ -76,6 +72,18 @@ nav a:hover {
     text-decoration: underline;;
 }
 
+section {
+    background-color: gray;
+    padding: 20px;
+    color: black;
+}
+
+/* parallax */
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 hr {
     background-color: #ffffff;
     border: 40px dashed #2b2727;
@@ -107,13 +115,14 @@ footer img {
 .italic {
     font-style: italic;
     display: block;
-    color: #ff0000;
+    color: white;
 }
 
 .hide {
     display: none;
 }
 
+/* buttons for menu description toggle */
 button {
     position: relative;
     bottom: 0.2em;
