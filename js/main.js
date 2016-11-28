@@ -15,4 +15,5 @@ $(document).ready(function () {
             $(this).closest('article').removeClass('italic');
         });
     });
+
 });

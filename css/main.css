@@ -4,7 +4,8 @@ html {
     width: 100%;
     background-attachment: fixed;
     background-size: auto;
-    color: #fbca38;;
+    color: #fbca38;
+    text-align: center;
 }
 
 /* fonts & sizing */
@@ -46,6 +47,8 @@ li {
 }
 
 /* nav bar */
+
+/*
 nav ul {
     background-image: url(../img/chrome1.png);
     margin: 0;
@@ -71,6 +74,13 @@ nav a:hover {
     font-style: italic;
     text-decoration: underline;;
 }
+*/
+
+/* parallax */
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
 
 section {
     background-color: gray;
@@ -78,10 +88,9 @@ section {
     color: black;
 }
 
-/* parallax */
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+article {
+    width: 70%;
+    margin: auto;
 }
 
 hr {
@@ -102,8 +111,18 @@ header {
     margin: auto;
 }
 
+article img,
+section img {
+    width: 80%;
+    text-align: center;
+}
+
 iframe {
     width: 90%;
+}
+
+.contact img {
+    width: 20%;
 }
 
 footer img {
