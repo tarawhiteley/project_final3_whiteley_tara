@@ -95,12 +95,10 @@ body {
 button {
 	display:inline-block;
 	margin-top: 10px;
-	margin-right: 10px;
-	padding: 10px 20px;
 	line-height: 100%;
 
 	color: #fff;
-	font-size: 14px;
+	font-size: 0.9em;
 	text-align: center;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	vertical-align: middle;
