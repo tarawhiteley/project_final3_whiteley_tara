@@ -9,13 +9,17 @@
 
 ## Resources
 
-- [jQuery 1](https://github.com/pixelcog/parallax.js/)
+- [jQuery 1/Parallax](https://github.com/pixelcog/parallax.js/)
 
     - My first jQuery plugin adds parallax scrolling to the site. My background images made it hard to see the text so I used this plugin to add interest while using simple gray backgrounds for the text sections.
 
-- [jQuery 2]()
 
-- [Custom Javascript]()
+- [jQuery 2/Responsive tabs](https://github.com/jellekralt/Responsive-Tabs)
+
+    - My second jQuery plugin adds a responsive tab (small screen)/accordion (larger screen) functionality to the menu section. I felt this was necessary because the menu section was so long.
+
+
+- [Custom JavaScript]()
 
 - [Custom jQuery](https://ufl.instructure.com/courses/330762/pages/jquery-events-and-effects?module_item_id=6205801)
 
@@ -40,6 +44,11 @@
 - [Fifties Slang](http://fiftiesweb.com/pop/1950s-slang/)
 
     - This site helped me research 50's era slang for use in my website, since the restaurant incorporates a 1950's theme.
+    
+
+- [Google Images](https://images.google.com/)
+
+    - I also used Google Images for the images on my website.
 
 ### Deductions
 - I reviewed the list of deductions for this project and in the syllabus.

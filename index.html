@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive-tabs.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -31,139 +33,160 @@
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 1.jpg"></div>
 
 <section>
-    <h2 id="menu">What's Cookin'</h2>
-		<img src="img/burger.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
-        <h3>The Starter</h3>
-        <h3>Fire up your night with an app.</h3>
+    <h2>What's Cookin'</h2>
 
-			<article>
-		        <h4>Nuts and Bolts</h4>
-		        <p class="description">Everything but the kitchen sink: potato skins, French fries, onion rings, chicken bites and whatever else we can find in the back.</p>
-		        <p class="description">$5.99</p>
-			</article>
+	<img src="img/burger.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
 
-			<article>
-	            <h4>Onion Rings</h4>
-	            <p class="description">Onion rings piled high, with our signature Jack's sauce on the side.</p>
-	            <p class="description">$4.99</p>
-    		</article>
+			<!--Horizontal Tab-->
+		<div id="horizontalTab">
+			<ul>
+				<li><a href="#tab-1">Starters</a></li>
+				<li><a href="#tab-2">Dinners</a></li>
+				<li><a href="#tab-3">Drinks</a></li>
+				<li><a href="#tab-4">Desserts</a></li>
+			</ul>
 
-			<article>
-	            <h4>Soup of the Day</h4>
-	            <p class="description">Who knows what we have up our sleeve. You better ask your server.</p>
-	            <p class="description">$3.99</p>
-    		</article>
 
-        <h3>The Engine</h3>
-        <h3>All plates are served with French fries. Ya, dig?</h3>
+			<div id="tab-1">
+		        <h3>The Starter</h3>
+		        <h3>Fire up your night with an app.</h3>
 
-		    <article>
-	            <h4>The Douglas Sirk 50 oz. steak</h4>
-	            <p class="description">Yeah, we said 50 oz. Can you handle it, Daddy-O?</p>
-	            <p class="description">$19.99</p>
-		    </article>
+					<article>
+				        <h4>Nuts and Bolts</h4>
+				        <p class="description">Everything but the kitchen sink: potato skins, French fries, onion rings, chicken bites and whatever else we can find in the back.</p>
+				        <p class="description">$5.99</p>
+					</article>
 
-		    <article>
-	            <h4>N.Y. Cut Steak</h4>
-	            <p class="description">A more traditional size of steak at 12 oz. in case you left your Daddy-O pants at home.</p>
-	            <p class="description">$9.99</p>
-		    </article>
+					<article>
+			            <h4>Onion Rings</h4>
+			            <p class="description">Onion rings piled high, with our signature Jack's sauce on the side.</p>
+			            <p class="description">$4.99</p>
+		    		</article>
 
-			<article>
-	            <h4>Baked Meat Loaf</h4>
-	            <p class="description">Just like Mom used to make on Sundays.</p>
-	            <p class="description">$13.99</p>
-			</article>
+					<article>
+			            <h4>Soup of the Day</h4>
+			            <p class="description">Who knows what we have up our sleeve. You better ask your server.</p>
+			            <p class="description">$3.99</p>
+		    		</article>
+			</div>
 
-			<article>
-	            <h4>Grilled Ham Steak</h4>
-	            <p class="description">Ham isn't enough for Jack, so we top our ham steak with crumbled bacon pieces. Sorry, Porky.</p>
-	            <p class="description">$13.99</p>
-			</article>
+			<div id="tab-2">
+		        <h3>The Engine</h3>
+		        <h3>All plates are served with French fries. Ya, dig?</h3>
 
-			<article>
-	            <h4>Slim's Famous Speedburger</h4>
-	            <p class="description">Loaded the Slim's way, with chili, coleslaw, American cheese, mustard and onions.</p>
-	            <p class="description">$9.99</p>
-			</article>
+				    <article>
+			            <h4>The Douglas Sirk 50 oz. steak</h4>
+			            <p class="description">Yeah, we said 50 oz. Can you handle it, Daddy-O?</p>
+			            <p class="description">$19.99</p>
+				    </article>
 
-			<article>
-	            <h4>Double Deluxe Speedburger</h4>
-	            <p class="description">The perfection of our Speedburger with double the meat and cheese, and some bacon for good measure.</p>
-	            <p class="description">$11.99</p>
-			</article>
+				    <article>
+			            <h4>N.Y. Cut Steak</h4>
+			            <p class="description">A more traditional size of steak at 12 oz. in case you left your Daddy-O pants at home.</p>
+			            <p class="description">$9.99</p>
+				    </article>
 
-			<article>
-	            <h4>California Hareburger</h4>
-	            <p class="description">Tradition with a twist: American cheese, lettuce, tomato and onions and topped with every Hare's favorite, carrot slices. That's right, doc.</p>
-	            <p class="description">$8.99</p>
-			</article>
+					<article>
+			            <h4>Baked Meat Loaf</h4>
+			            <p class="description">Just like Mom used to make on Sundays.</p>
+			            <p class="description">$13.99</p>
+					</article>
 
-			<article>
-	            <h4>Club Burger</h4>
-	            <p class="description">You guessed it. Our grade-A beef patties topped with lettuce, tomato and crispy bacon. And cheese. Always cheese.</p>
-	            <p class="description">$8.99</p>
-			</article>
+					<article>
+			            <h4>Grilled Ham Steak</h4>
+			            <p class="description">Ham isn't enough for Jack, so we top our ham steak with crumbled bacon pieces. Sorry, Porky.</p>
+			            <p class="description">$13.99</p>
+					</article>
 
-			<article>
-	            <h4>Bacon and Cheeseburger</h4>
-	            <p class="description">Beef. Bacon. Cheese. Need we say more?</p>
-	            <p class="description">$8.99</p>
-			</article>
+					<article>
+			            <h4>Slim's Famous Speedburger</h4>
+			            <p class="description">Loaded the Slim's way, with chili, coleslaw, American cheese, mustard and onions.</p>
+			            <p class="description">$9.99</p>
+					</article>
 
-			<article>
-	            <h4>German Burger</h4>
-	            <p class="description">Ah, the kraut. American cheese, lettuce, tomato, onions and sauerkraut.</p>
-	            <p class="description">$8.99</p>
-			</article>
+					<article>
+			            <h4>Double Deluxe Speedburger</h4>
+			            <p class="description">The perfection of our Speedburger with double the meat and cheese, and some bacon for good measure.</p>
+			            <p class="description">$11.99</p>
+					</article>
 
-        <h3>The Lube</h3>
-        <h3>Don't be a square and get a water.</h3>
+					<article>
+			            <h4>California Hareburger</h4>
+			            <p class="description">Tradition with a twist: American cheese, lettuce, tomato and onions and topped with every Hare's favorite, carrot slices. That's right, doc.</p>
+			            <p class="description">$8.99</p>
+					</article>
 
-			<article>
-	            <h4>The World Famous $5 Milkshake</h4>
-	            <p class="description">In the words of Vincent Vega, "It's a pretty freaking good milkshake." Your choice of Martin & Lewis or Amos & Andy</p>
-	            <p class="description">$5.00</p>
-			</article>
+					<article>
+			            <h4>Club Burger</h4>
+			            <p class="description">You guessed it. Our grade-A beef patties topped with lettuce, tomato and crispy bacon. And cheese. Always cheese.</p>
+			            <p class="description">$8.99</p>
+					</article>
 
-			<article>
-	            <h4>Vanilla or Cherry Coke</h4>
-	            <p class="description">The Classic Coca-Cola taste with a vanilla or cherry twist</p>
-	            <p class="description">$3.99</p>
-			</article>
+					<article>
+			            <h4>Bacon and Cheeseburger</h4>
+			            <p class="description">Beef. Bacon. Cheese. Need we say more?</p>
+			            <p class="description">$8.99</p>
+					</article>
 
-			<article>
-	            <h4>Root Beer Float</h4>
-	            <p class="description">Take yourself back to the days of ice cream melting in a refreshing Root Beer.</p>
-	            <p class="description">$3.99</p>
-			</article>
+					<article>
+		            <h4>German Burger</h4>
+		            <p class="description">Ah, the kraut. American cheese, lettuce, tomato, onions and sauerkraut.</p>
+		            <p class="description">$8.99</p>
+				</article>
+			</div>
 
-			<article>
-	            <h4>Orange Freeze</h4>
-	            <p class="description">Another trip down memory lane with orange sherbet, orange juice and a little milk.</p>
-	            <p class="description">$3.99</p>
-			</article>
+			<div id="tab-3">
+		        <h3>The Lube</h3>
+		        <h3>Don't be a square and get a water.</h3>
 
-        <h3>The Chrome</h3>
-        <h3>Jazz up your dinner with a dessert</h3>
+					<article>
+			            <h4>The World Famous $5 Milkshake</h4>
+			            <p class="description">In the words of Vincent Vega, "It's a pretty freaking good milkshake." Your choice of Martin & Lewis or Amos & Andy</p>
+			            <p class="description">$5.00</p>
+					</article>
 
-		<article>
-            <h4>Saturday Night's Sunday</h4>
-            <p class="description">Your choice of hot fudge or butterscotch sundae. Did we mention that our toppings are spiked? (Shirley Temple's are cool, too.)</p>
-            <p class="description">$6.99</p>
-		</article>
+					<article>
+			            <h4>Vanilla or Cherry Coke</h4>
+			            <p class="description">The Classic Coca-Cola taste with a vanilla or cherry twist</p>
+			            <p class="description">$3.99</p>
+					</article>
 
-		<article>
-            <h4>Banana Split</h4>
-            <p class="description">Ice cream topped with hot fudge, butterscotch and strawberry (spiked) toppings all chillin' within some split bananas.</p>
-            <p class="description">$6.99</p>
-		</article>
+					<article>
+			            <h4>Root Beer Float</h4>
+			            <p class="description">Take yourself back to the days of ice cream melting in a refreshing Root Beer.</p>
+			            <p class="description">$3.99</p>
+					</article>
 
-		<article>
-            <h4>Pie, pie and more pie</h4>
-            <p class="description">Of course, we have pie. Apple pie. Pumpkin pie. Cherry pie. All served ala mode.</p>
-            <p class="description">$4.99</p>
-		</article>
+					<article>
+			            <h4>Orange Freeze</h4>
+			            <p class="description">Another trip down memory lane with orange sherbet, orange juice and a little milk.</p>
+			            <p class="description">$3.99</p>
+					</article>
+			</div>
+
+			<div id="tab-4">
+		        <h3>The Chrome</h3>
+		        <h3>Jazz up your dinner with a dessert</h3>
+
+					<article>
+			            <h4>Saturday Night's Sunday</h4>
+			            <p class="description">Your choice of hot fudge or butterscotch sundae. Did we mention that our toppings are spiked? (Shirley Temple's are cool, too.)</p>
+			            <p class="description">$6.99</p>
+					</article>
+
+					<article>
+			            <h4>Banana Split</h4>
+			            <p class="description">Ice cream topped with hot fudge, butterscotch and strawberry (spiked) toppings all chillin' within some split bananas.</p>
+			            <p class="description">$6.99</p>
+					</article>
+
+					<article>
+			            <h4>Pie, pie and more pie</h4>
+			            <p class="description">Of course, we have pie. Apple pie. Pumpkin pie. Cherry pie. All served ala mode.</p>
+			            <p class="description">$4.99</p>
+					</article>
+			</div>
+		</div>
 </section>
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 2.jpg"></div>
@@ -235,6 +258,7 @@
 </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.responsiveTabs.min.js"></script>
     <script src="js/smoothscroll.js"></script>
 	<script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
