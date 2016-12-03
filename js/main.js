@@ -28,7 +28,6 @@ $(document).ready(function () {
             startCollapsed: 'accordion',
             collapsible: 'accordion',
             setHash: true,
-            disabled: [3, 4],
             click: function (e, tab) {
                 $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');
             },
