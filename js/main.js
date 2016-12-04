@@ -100,13 +100,13 @@ $(document).ready(function () {
     }, false);
 
 // Custom JavaScript - Popup RSVP form
-// Reservation form tarts hidden
-    $('#rsvpform').hide();
-// Upon clicking the button, form pops up for completion
+// Reservation form starts hidden
+    var formHide = document.getElementById('rsvpform');
+    formHide.classList.add('hide');
+// Upon clicking the button, form toggles visibility for completion
     var reserve = document.getElementById('rsvpButton');
     reserve.addEventListener('click', function () {
         var myElement = document.getElementById('rsvpform');
-        myElement.classList.add('.show');
-        console.log('I see you');
+        myElement.classList.toggle('show');
     });
 });
