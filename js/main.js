@@ -101,9 +101,8 @@ $(document).ready(function () {
 
     var reserve = document.getElementById('rsvpButton');
     reserve.addEventListener('click', function () {
-        var myElement = document.createElement('rsvpform');
-        document.getElementById('gallery').appendChild(myElement);
-        myElement.classList.add('show');
+        var myElement = document.getElementById('rsvpform');
+        myElement.classList.add('.show');
         console.log('I see you');
     });
 });

@@ -272,6 +272,10 @@ button.toggle1 {
     left: 0.9em;
 }
 
+#rsvpButton {
+    font-size: 2em;
+}
+
 /* gallery */
 .gallery {
     text-align: center;
