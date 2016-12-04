@@ -20,11 +20,11 @@ $(document).ready(function () {
     });
 
 // Responsive Tabs JS - menu section allows only one section to be shown at a time
-// Starts in collapsed position on scmaller screens
+// Starts in collapsed accordion position on scmaller screens
     $('#responsiveTabsDemo').responsiveTabs({
         startCollapsed: 'accordion'
     });
-
+// Responds to horizontal tabs on larger screens
     var $tabs = $('#horizontalTab');
     $tabs.responsiveTabs({
         rotate: false,
@@ -61,7 +61,7 @@ $(document).ready(function () {
         $tabs.responsiveTabs('activate', $(this).val());
     });
 
-//Responsive hamburger  Nav Bar
+//Responsive hamburger nav Bar, upon click of the hamburger icon, enlarges to show menu, closes when the x is clicked
     document.getElementById('hamburgler').addEventListener('click', checkNav);
     window.addEventListener('keyup', function (e) {
         if (e.keyCode === 27) closeNav();
@@ -83,7 +83,7 @@ $(document).ready(function () {
         document.body.classList.add('hamburgler-active');
     }
 
-//RSVP scroll
+//RSVP image gallery
     var th = document.getElementById('thumbnails');
     th.addEventListener('click', function (e) {
         var t = e.target, new_src = t.parentNode.href,
