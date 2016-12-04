@@ -46,14 +46,6 @@ h4 {
     font-stretch: extra-expanded;
 }
 
-p,
-li {
-    font-family: "coffee";
-    font-size: 1.2em;
-    line-height: 1.9em;
-    font-weight: bold;
-}
-
 .subtext {
     font-size: 1.4em;
 }
@@ -84,7 +76,19 @@ li {
     display: block;
 }
 
+p,
+li {
+    font-family: "coffee";
+    font-size: 1.2em;
+    line-height: 1.9em;
+    font-weight: bold;
+}
+
 /* nav bar */
+ul {
+    padding: 0;
+}
+
 nav li {
     list-style-type: none;
     color: #fbca38;
@@ -102,6 +106,7 @@ nav a:hover {
     text-decoration: underline;;
 }
 
+/* hamburger menu */
 .hamburgler-icon-wrapper {
     position: absolute;
     top: 1em;
@@ -193,12 +198,10 @@ nav a:hover {
     transform: translate(-50%, -50%) scale(1);
 }
 
-
 .hambugler-menu-list li {
     color: white;
     text-decoration: none;
 }
-
 
 /* parallax */
 .parallax-window {
@@ -206,6 +209,7 @@ nav a:hover {
     background: transparent;
 }
 
+/* general styline */
 section {
     background-color: #e6e6e6;
     padding: 20px;
@@ -257,7 +261,7 @@ footer img {
     width: 15%;
 }
 
-/* buttons for menu description toggle */
+/* buttons for menu description toggle & rsvp */
 button {
     position: relative;
     bottom: 0.2em;
@@ -274,6 +278,10 @@ button.toggle1 {
 
 #rsvpButton {
     font-size: 2em;
+    width: 30%;
+    margin: 10px auto;
+    left: auto;
+    padding: 10px 0;
 }
 
 /* gallery */
@@ -306,6 +314,7 @@ button.toggle1 {
     width: 4.5em;
     height: 3em;
     border: none;
+    padding: 5px;
 }
 
 .thumbnails a {

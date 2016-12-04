@@ -4,375 +4,369 @@
     <meta charset="utf-8">
     <title>Jack Rabbit Slim's</title>
     <meta name="description" content="Educational project for Pulp Fiction's Jack Rabbit Slim's">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/responsive-tabs.css" />
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-tabs.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+<!-- navigation menu -->
+    <nav class="hamburgler-menu">
+        <h2 class="hide">Navigation</h2>
+        <ul class="hamburgler-menu-list">
+            <li><a href="#menu" class="smoothScroll">What's Cookin'</a></li><!-- Menu with apps, entrees, beverages, desserts -->
+            <li><a href="#events" class="smoothScroll">The Twist'n Bash</a></li><!-- Events -->
+            <li><a href="#promo" class="smoothScroll">World Famous $5 Milkshake</a></li><!-- Ongoing promotion -->
+            <li><a href="#reservations" class="smoothScroll">Reserve Your Ride</a></li><!-- Reservations -->
+            <li><a href="#connect" class="smoothScroll">Let's Hang</a></li><!-- Location, hours, email, phone, social -->
+        </ul>
+    </nav>
+    <div id="hamburgler" class="hamburgler-icon-wrapper">
+        <span class="hamburgler-icon"></span>
+    </div>
 
-<nav class="hamburgler-menu">
-    <h2 class="hide">Navigation</h2>
-		<ul class="hamburgler-menu-list">
-	        <li><a href="#menu" class="smoothScroll">What's Cookin'</a></li><!-- Menu with apps, entrees, beverages, desserts -->
-	        <li><a href="#events" class="smoothScroll">The Twist'n Bash</a></li><!-- Events -->
-	        <li><a href="#promo" class="smoothScroll">World Famous $5 Milkshake</a></li><!-- Ongoing promotion -->
-	        <li><a href="#reservations" class="smoothScroll">Reserve Your Ride</a></li><!-- Reservations -->
-	        <li><a href="#connect" class="smoothScroll">Let's Hang</a></li><!-- Location, hours, email, phone, social -->
-		</ul>
-</nav>
-<div id="hamburgler" class="hamburgler-icon-wrapper">
-  <span class="hamburgler-icon"></span>
-</div>
+<!-- header image is responsive - tagline only shows on larger screen -->
+    <header>
+        <h1 class="hide">Jack Rabbit Slim's</h1>
+        <img src="img/logo-no-tag.png" alt="logo" title="Jack Rabbit Slim's" id="top">
+        <img src="img/logo.png" alt="logo" title="Jack Rabbit Slim's" class="hide largeScreen">
+        <h2>Welcome to <span class="tagline">Jack Rabbit Slim's, The Next Best Thing to a Time Machine </span>where the hip Daddy-O's and Dollies come for good food and a good time!</h2>
+        <hr>
+    </header>
 
-<header>
-    <h1 class="hide">Jack Rabbit Slim's</h1>
-    <img src="img/logo-no-tag.png" alt="logo" title="Jack Rabbit Slim's" id="top">
-    <img src="img/logo.png" alt="logo" title="Jack Rabbit Slim's" class="hide largeScreen">
-    <h2>Welcome to <span class="tagline">Jack Rabbit Slim's, The Next Best Thing to a Time Machine </span>where the hip Daddy-O's and Dollies come for good food and a good time!</h2>
-    <hr>
-</header>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 1.jpg"></div>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/car 1.jpg"></div>
+    <section>
+        <h2>What's Cookin'</h2>
+        <img src="img/burger.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
 
-<section>
-    <h2>What's Cookin'</h2>
+<!-- horizontal responsive accordinan tab for menu -->
+        <div id="horizontalTab">
+            <ul>
+                <li><a href="#tab-1">Starters</a></li>
+                <li><a href="#tab-2">Dinners</a></li>
+                <li><a href="#tab-3">Drinks</a></li>
+                <li><a href="#tab-4">Desserts</a></li>
+            </ul>
 
-	<img src="img/burger.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
+            <div id="tab-1">
+                <h3>The Starter</h3>
+                    <p class="subtext">Fire up your night with an app.</p>
 
-			<!--Horizontal Tab-->
-		<div id="horizontalTab">
-			<ul>
-				<li><a href="#tab-1">Starters</a></li>
-				<li><a href="#tab-2">Dinners</a></li>
-				<li><a href="#tab-3">Drinks</a></li>
-				<li><a href="#tab-4">Desserts</a></li>
-			</ul>
+                <article>
+                    <h4>Nuts and Bolts</h4>
+                        <p class="description">Everything but the kitchen sink: potato skins, French fries, onion rings, chicken bites and whatever else we can find in the back.</p>
+                        <p class="description">$5.99</p>
+                </article>
 
+                <article>
+                    <h4>Onion Rings</h4>
+                        <p class="description">Onion rings piled high, with our signature Jack's sauce on the side.</p>
+                        <p class="description">$4.99</p>
+                </article>
 
-			<div id="tab-1">
-		        <h3>The Starter</h3>
-		        <p class="subtext">Fire up your night with an app.</p>
+                <article>
+                    <h4>Soup of the Day</h4>
+                        <p class="description">Who knows what we have up our sleeve. You better ask your server.</p>
+                        <p class="description">$3.99</p>
+                </article>
+            </div>
 
-					<article>
-				        <h4>Nuts and Bolts</h4>
-				        <p class="description">Everything but the kitchen sink: potato skins, French fries, onion rings, chicken bites and whatever else we can find in the back.</p>
-				        <p class="description">$5.99</p>
-					</article>
+            <div id="tab-2">
+                <h3>The Engine</h3>
+                    <p class="subtext">All plates are served with French fries. Ya, dig?</p>
 
-					<article>
-			            <h4>Onion Rings</h4>
-			            <p class="description">Onion rings piled high, with our signature Jack's sauce on the side.</p>
-			            <p class="description">$4.99</p>
-		    		</article>
+                <article>
+                    <h4>The Douglas Sirk 50 oz. steak</h4>
+                        <p class="description">Yeah, we said 50 oz. Can you handle it, Daddy-O?</p>
+                        <p class="description">$19.99</p>
+                </article>
 
-					<article>
-			            <h4>Soup of the Day</h4>
-			            <p class="description">Who knows what we have up our sleeve. You better ask your server.</p>
-			            <p class="description">$3.99</p>
-		    		</article>
-			</div>
+                <article>
+                    <h4>N.Y. Cut Steak</h4>
+                        <p class="description">A more traditional size of steak at 12 oz. in case you left your Daddy-O pants at home.</p>
+                        <p class="description">$9.99</p>
+                </article>
 
-			<div id="tab-2">
-		        <h3>The Engine</h3>
-		        <p class="subtext">All plates are served with French fries. Ya, dig?</p>
+                <article>
+                    <h4>Baked Meat Loaf</h4>
+                        <p class="description">Just like Mom used to make on Sundays.</p>
+                        <p class="description">$13.99</p>
+                </article>
 
-				    <article>
-			            <h4>The Douglas Sirk 50 oz. steak</h4>
-			            <p class="description">Yeah, we said 50 oz. Can you handle it, Daddy-O?</p>
-			            <p class="description">$19.99</p>
-				    </article>
+                <article>
+                    <h4>Grilled Ham Steak</h4>
+                        <p class="description">Ham isn't enough for Jack, so we top our ham steak with crumbled bacon pieces. Sorry, Porky.</p>
+                        <p class="description">$13.99</p>
+                </article>
 
-				    <article>
-			            <h4>N.Y. Cut Steak</h4>
-			            <p class="description">A more traditional size of steak at 12 oz. in case you left your Daddy-O pants at home.</p>
-			            <p class="description">$9.99</p>
-				    </article>
+                <article>
+                    <h4>Slim's Famous Speedburger</h4>
+                        <p class="description">Loaded the Slim's way, with chili, coleslaw, American cheese, mustard and onions.</p>
+                        <p class="description">$9.99</p>
+                </article>
 
-					<article>
-			            <h4>Baked Meat Loaf</h4>
-			            <p class="description">Just like Mom used to make on Sundays.</p>
-			            <p class="description">$13.99</p>
-					</article>
+                <article>
+                    <h4>Double Deluxe Speedburger</h4>
+                        <p class="description">The perfection of our Speedburger with double the meat and cheese, and some bacon for good measure.</p>
+                        <p class="description">$11.99</p>
+                </article>
 
-					<article>
-			            <h4>Grilled Ham Steak</h4>
-			            <p class="description">Ham isn't enough for Jack, so we top our ham steak with crumbled bacon pieces. Sorry, Porky.</p>
-			            <p class="description">$13.99</p>
-					</article>
+                <article>
+                    <h4>California Hareburger</h4>
+                        <p class="description">Tradition with a twist: American cheese, lettuce, tomato and onions and topped with every Hare's favorite, carrot slices. That's right, doc.</p>
+                        <p class="description">$8.99</p>
+                </article>
 
-					<article>
-			            <h4>Slim's Famous Speedburger</h4>
-			            <p class="description">Loaded the Slim's way, with chili, coleslaw, American cheese, mustard and onions.</p>
-			            <p class="description">$9.99</p>
-					</article>
+                <article>
+                    <h4>Club Burger</h4>
+                        <p class="description">You guessed it. Our grade-A beef patties topped with lettuce, tomato and crispy bacon. And cheese. Always cheese.</p>
+                        <p class="description">$8.99</p>
+                </article>
 
-					<article>
-			            <h4>Double Deluxe Speedburger</h4>
-			            <p class="description">The perfection of our Speedburger with double the meat and cheese, and some bacon for good measure.</p>
-			            <p class="description">$11.99</p>
-					</article>
+                <article>
+                    <h4>Bacon and Cheeseburger</h4>
+                        <p class="description">Beef. Bacon. Cheese. Need we say more?</p>
+                        <p class="description">$8.99</p>
+                </article>
 
-					<article>
-			            <h4>California Hareburger</h4>
-			            <p class="description">Tradition with a twist: American cheese, lettuce, tomato and onions and topped with every Hare's favorite, carrot slices. That's right, doc.</p>
-			            <p class="description">$8.99</p>
-					</article>
+                <article>
+                    <h4>German Burger</h4>
+                        <p class="description">Ah, the kraut. American cheese, lettuce, tomato, onions and sauerkraut.</p>
+                        <p class="description">$8.99</p>
+                </article>
+            </div>
 
-					<article>
-			            <h4>Club Burger</h4>
-			            <p class="description">You guessed it. Our grade-A beef patties topped with lettuce, tomato and crispy bacon. And cheese. Always cheese.</p>
-			            <p class="description">$8.99</p>
-					</article>
+            <div id="tab-3">
+                <h3>The Lube</h3>
+                    <p class="subtext">Don't be a square and get a water.</p>
 
-					<article>
-			            <h4>Bacon and Cheeseburger</h4>
-			            <p class="description">Beef. Bacon. Cheese. Need we say more?</p>
-			            <p class="description">$8.99</p>
-					</article>
+                <article>
+                    <h4>The World Famous $5 Milkshake</h4>
+                        <p class="description">In the words of Vincent Vega, "It's a pretty freaking good milkshake." Your choice of Martin '&amp;' Lewis or Amos '&amp;' Andy</p>
+                        <p class="description">$5.00</p>
+                </article>
 
-					<article>
-		            <h4>German Burger</h4>
-		            <p class="description">Ah, the kraut. American cheese, lettuce, tomato, onions and sauerkraut.</p>
-		            <p class="description">$8.99</p>
-				</article>
-			</div>
+                <article>
+                    <h4>Vanilla or Cherry Coke</h4>
+                        <p class="description">The Classic Coca-Cola taste with a vanilla or cherry twist</p>
+                        <p class="description">$3.99</p>
+                </article>
 
-			<div id="tab-3">
-		        <h3>The Lube</h3>
-		        <p class="subtext">Don't be a square and get a water.</p>
+                <article>
+                    <h4>Root Beer Float</h4>
+                        <p class="description">Take yourself back to the days of ice cream melting in a refreshing Root Beer.</p>
+                        <p class="description">$3.99</p>
+                </article>
 
-					<article>
-			            <h4>The World Famous $5 Milkshake</h4>
-			            <p class="description">In the words of Vincent Vega, "It's a pretty freaking good milkshake." Your choice of Martin '&amp;' Lewis or Amos '&amp;' Andy</p>
-			            <p class="description">$5.00</p>
-					</article>
+                <article>
+                    <h4>Orange Freeze</h4>
+                        <p class="description">Another trip down memory lane with orange sherbet, orange juice and a little milk.</p>
+                        <p class="description">$3.99</p>
+                </article>
+            </div>
 
-					<article>
-			            <h4>Vanilla or Cherry Coke</h4>
-			            <p class="description">The Classic Coca-Cola taste with a vanilla or cherry twist</p>
-			            <p class="description">$3.99</p>
-					</article>
+            <div id="tab-4">
+                <h3>The Chrome</h3>
+                <p class="subtext">Jazz up your dinner with a dessert</p>
 
-					<article>
-			            <h4>Root Beer Float</h4>
-			            <p class="description">Take yourself back to the days of ice cream melting in a refreshing Root Beer.</p>
-			            <p class="description">$3.99</p>
-					</article>
+                <article>
+                    <h4>Saturday Night's Sunday</h4>
+                        <p class="description">Your choice of hot fudge or butterscotch sundae. Did we mention that our toppings are spiked? (Shirley Temple's are cool, too.)</p>
+                        <p class="description">$6.99</p>
+                </article>
 
-					<article>
-			            <h4>Orange Freeze</h4>
-			            <p class="description">Another trip down memory lane with orange sherbet, orange juice and a little milk.</p>
-			            <p class="description">$3.99</p>
-					</article>
-			</div>
+                <article>
+                    <h4>Banana Split</h4>
+                        <p class="description">Ice cream topped with hot fudge, butterscotch and strawberry (spiked) toppings all chillin' within some split bananas.</p>
+                        <p class="description">$6.99</p>
+                </article>
 
-			<div id="tab-4">
-		        <h3>The Chrome</h3>
-		        <p class="subtext">Jazz up your dinner with a dessert</p>
+                <article>
+                    <h4>Pie, pie and more pie</h4>
+                        <p class="description">Of course, we have pie. Apple pie. Pumpkin pie. Cherry pie. All served ala mode.</p>
+                        <p class="description">$4.99</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-					<article>
-			            <h4>Saturday Night's Sunday</h4>
-			            <p class="description">Your choice of hot fudge or butterscotch sundae. Did we mention that our toppings are spiked? (Shirley Temple's are cool, too.)</p>
-			            <p class="description">$6.99</p>
-					</article>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 2.jpg"></div>
 
-					<article>
-			            <h4>Banana Split</h4>
-			            <p class="description">Ice cream topped with hot fudge, butterscotch and strawberry (spiked) toppings all chillin' within some split bananas.</p>
-			            <p class="description">$6.99</p>
-					</article>
+    <section>
+        <h2 id="events">The Twist'n Bash</h2>
+        <img src="img/twistart.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
+            <h3>Weekly Dance Contest</h3>
+                <p>Yo, cool cats, you'll want to make this scene as we shake, rattle, and roll every Saturday night!</p>
+                <p>Our weekly dance contest starts at 8 p.m.</p>
+                <p>Wear your hippest threads and come ready to impress because the grand prize is $250! That's a lot of $5 milkshakes!</p>
+    </section>
 
-					<article>
-			            <h4>Pie, pie and more pie</h4>
-			            <p class="description">Of course, we have pie. Apple pie. Pumpkin pie. Cherry pie. All served ala mode.</p>
-			            <p class="description">$4.99</p>
-					</article>
-			</div>
-		</div>
-</section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 3.jpg"></div>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/car 2.jpg"></div>
+    <section>
+        <h2 id="promo">World Famous $5 Milkshake</h2>
+        <img src="img/fivedollarshake.jpg" alt="milkshake" title="Don't miss out on this milkshake!">
+            <h3>Half off Milkshakes!</h3>
+                <p>All the real gone cats know about our $5 milkshakes and know they're worth every Washington</p>
+                <p>But right now we're offering them for <span class="italic">** half off **</span> with any dinner plate purchase! Use that extra green on one of our desserts!</p>
+    </section>
 
-<section>
-    <h2 id="events">The Twist'n Bash</h2>
-    <article>
-		<img src="img/twistart.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
-        <h3>Weekly Dance Contest</h3>
-        <p>Yo, cool cats, you'll want to make this scene as we shake, rattle, and roll every Saturday night!</p>
-		<p>Our weekly dance contest starts at 8 p.m.</p>
-		<p>Wear your hippest threads and come ready to impress because the grand prize is $250! That's a lot of $5 milkshakes!</p>
-    </article>
-</section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 4.jpg"></div>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/car 3.jpg"></div>
+    <section id="reservationsClick">
+        <h2 id="reservations">Reserve your favorite hot rod!</h2>
 
-<section>
-    <h2 id="promo">World Famous $5 Milkshake</h2>
-    <article id="articlesection">
-		<img src="img/fivedollarshake.jpg" alt="milkshake" title="Don't miss out on this milkshake!">
-        <h3>Half off Milkshakes!</h3>
-        <p>All the real gone cats know about our $5 milkshakes and know they're worth every Washington</p>
-		<p>But right now we're offering them for <span class="italic">** half off **</span> with any dinner plate purchase! Use that extra green on one of our desserts!</p>
-    </article>
-</section>
+        <div id="gallery" class="gallery">
+            <div id="lg-wrap" class="current-image-wrapper">
+                <img id="large" data-idx="0" src="img/res1.jpeg" alt="reservation">
+            </div>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/car 4.jpg"></div>
-
-<section id="reservationsClick">
-    <h2 id="reservations">Reserve your favorite hot rod!</h2>
-    <article>
-
-    <div id="gallery" class="gallery">
-        <div id="lg-wrap" class="current-image-wrapper">
-            <img id="large" data-idx="0" src="img/res1.jpeg" alt="reservation">
+            <ul id="thumbnails" class="thumbnails">
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xKHjYjtqhPyoISGrUPdOaE3Z11JSoZI8_OYQhq3rv8jKonRi">
+                        <img data-idx="0" src="img/res1.jpeg" alt="reservation">
+                        <p>Green Envy</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://blog.cars-on-line.com/wp-content/uploads/2013/05/1957-Chrysler-300-C-Covertible.jpg">
+                        <img data-idx="1" src="img/res2.jpg" alt="reservation">
+                        <p>Orange Crush</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://s-media-cache-ak0.pinimg.com/originals/d3/19/e9/d319e9cf93801e4f38eb0f95b36de94d.jpg">
+                        <img data-idx="2" src="img/res3.jpg" alt="reservation">
+                        <p>Black Beauty</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://s-media-cache-ak0.pinimg.com/originals/ef/e2/72/efe27208200d4ba93a273d748acec84d.jpg">
+                        <img data-idx="3" src="img/res4.jpg" alt="reservation">
+                        <p>Rosey Sue</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://static1.squarespace.com/static/5316a542e4b0ab76f8fe62c2/t/5659f30ae4b0a63eb2c800ec/1448735502486/?format=1000w">
+                        <img data-idx="4" src="img/res7.jpeg" alt="reservation">
+                        <p>Baby Blue</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://speednik.com/files/2014/05/rk_motors_1957_desoto_fireflite.jpg">
+                        <img data-idx="5" src="img/res8.jpg" alt="reservation">
+                        <p>Big Red</p>
+                    </a>
+                </li>
+            </ul>
+            <button id="rsvpButton">Click Here to RSVP</button>
         </div>
 
-        <ul id="thumbnails" class="thumbnails">
-            <li>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xKHjYjtqhPyoISGrUPdOaE3Z11JSoZI8_OYQhq3rv8jKonRi">
-                    <img data-idx="0" src="img/res1.jpeg" alt="reservation">
-                    <p>Green Envy</p>
-                </a>
-            </li>
-            <li>
-                <a href="http://blog.cars-on-line.com/wp-content/uploads/2013/05/1957-Chrysler-300-C-Covertible.jpg">
-                    <img data-idx="1" src="img/res2.jpg" alt="reservation">
-                    <p>Orange Crush</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://s-media-cache-ak0.pinimg.com/originals/d3/19/e9/d319e9cf93801e4f38eb0f95b36de94d.jpg">
-                    <img data-idx="2" src="img/res3.jpg" alt="reservation">
-                    <p>Black Beauty</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://s-media-cache-ak0.pinimg.com/originals/ef/e2/72/efe27208200d4ba93a273d748acec84d.jpg">
-                    <img data-idx="3" src="img/res4.jpg" alt="reservation">
-                    <p>Rosey Sue</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://static1.squarespace.com/static/5316a542e4b0ab76f8fe62c2/t/5659f30ae4b0a63eb2c800ec/1448735502486/?format=1000w">
-                    <img data-idx="4" src="img/res7.jpeg" alt="reservation">
-                    <p>Baby Blue</p>
-                </a>
-            </li>
-            <li>
-                <a href="http://speednik.com/files/2014/05/rk_motors_1957_desoto_fireflite.jpg">
-                    <img data-idx="5" src="img/res8.jpg" alt="reservation">
-                    <p>Big Red</p>
-                </a>
-            </li>
-        </ul>
-        <button id="rsvpButton">Click Here to RSVP</button>
-    </div>
+        <div id="rsvpform">
+            <p>Please complete this form and we'll be in touch within 24 hours to confirm your RSVP.</p>
 
-    <div id="rsvpform">
-        <p>Please complete this form and we'll be in touch withint 24 hours to confirm your RSVP.</p>
-        <form method="post" action="mailto:twhiteley@ufl.edu" name="contact" id="form">
-        <fieldset>
-            <legend>Your Contact Info</legend>
-            <label for="firstName">First name:
-            </label>
-            <input type="text" name="firstName" id="firstName" size="40">
-            <label for="lastName">Last name:
-            </label>
-            <input type="text" name="lastName" id="lastName" size="40">
-            <label for="phone">Telephone:
-            <input type="tel" name="phone" id="phone" size="40">
-            </label>
-            <label for="email">Email:
-            </label>
-            <input type="email" name="email" size="40">
-        </fieldset>
+            <form method="post" action="mailto:twhiteley@ufl.edu" name="contact" id="form">
+                <fieldset>
+                    <legend>Your Contact Info</legend>
 
-        <fieldset>
-            <legend>Your Preferred Date</legend>
-            <label for="preferredDate">Preferred Date:
-            </label>
-            <input type="date" name="preferredDate" id="preferredDate">
-        </fieldset>
+                    <label for="firstName">First name:</label>
+                    <input type="text" name="firstName" id="firstName" size="40">
 
-        <fieldset>
-            <legend>Which ride would you like to reserve?</legend>
+                    <label for="lastName">Last name:</label>
+                    <input type="text" name="lastName" id="lastName" size="40">
 
-            <label for="new">
-            <input type="radio" name="length" id="one" value="New" />Green Envy
-            </label>
+                    <label for="phone">Telephone:</label>
+                    <input type="tel" name="phone" id="phone" size="40">
 
-            <label for="medium">
-            <input type="radio" name="length" id="two" value="Medium" />Orange Crush
-            </label>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" size="40">
+                </fieldset>
 
-            <label for="long">
-            <input type="radio" name="length" id="three" value="Long" />Black Beauty
-            </label>
+                <fieldset>
+                    <legend>Your Preferred Date</legend>
+                    <label for="preferredDate">Preferred Date:</label>
+                    <input type="date" name="preferredDate" id="preferredDate">
+                    </fieldset>
 
-            <label for="long">
-            <input type="radio" name="length" id="four" value="Long" />Rosey Sue
-            </label>
+                    <fieldset>
+                    <legend>Which ride would you like to reserve?</legend>
 
-            <label for="long">
-            <input type="radio" name="length" id="five" value="Long" />Baby Blue
-            </label>
+                    <label for="one"></label>
+                    <input type="radio" name="length" id="one" value="One"/>Green Envy
 
-            <label for="long">
-            <input type="radio" name="length" id="six" value="Long" />Big Red
-            </label>
-        </fieldset>
+                    <label for="two"></label>
+                    <input type="radio" name="length" id="two" value="Two"/>Orange Crush
 
-        <legend>Special Requests</legend>
-            <label for="requests">Special Requests</label>
-            <textarea rows="15" name="message"></textarea>
+                    <label for="three"></label>
+                    <input type="radio" name="length" id="three" value="Three"/>Black Beauty
 
-        <input type="submit" name="submit" value="Send" id="submit"/>
-        </form>
-    </div>
+                    <label for="four"></label>
+                    <input type="radio" name="length" id="four" value="Four"/>Rosey Sue
 
-    </article>
-</section>
+                    <label for="five"></label>
+                    <input type="radio" name="length" id="five" value="Five"/>Baby Blue
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/car 5.jpg"></div>
+                    <label for="six"></label>
+                    <input type="radio" name="length" id="six" value="Six"/>Big Red
+                </fieldset>
 
-<section>
-	<img src="img/exterior.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
+                <fieldset>
+                    <legend>Special Requests</legend>
 
-    <h2 id="connect">Let's go steady</h2>
-    <article>
-        <h3>Hang with us in real life</h3>
-        <p>1435 Flower Street</p>
-        <p>Glendale, CA 91201</p>
-        <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.3558327041856!2d-118.29248868478203!3d34.162818980576006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c00dc957dfd3%3A0xfec7f5fc22c4d7b0!2s1435+Flower+St%2C+Glendale%2C+CA+91201!5e0!3m2!1sen!2sus!4v1480206038885" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"
-    </article>
-    <article>
-        <h3>Hours</h3>
-        <p>Sunday through Thursday: 11 am to 10 pm</p>
-        <p>Friday and Saturday: 11 am to 2 am</p>
-    </article>
-    <article class="contact">
-        <h3>Ring us</h3>
-        <a href="tel:+18885775467" title="Click to call on mobile"><img src="img/phone.png" alt="phone" title="Call me"><span class="phone"> 1.888.JR.SLIMS</span></a>
-        <h3>E-mail us</h3>
-        <a href="mailto:jack@jackrabbitslims.com"><img src="img/email.png" alt="email" title="Email me"></a>
-    </article>
-    <article class="contact">
-        <h3>Chill with us on social</h3>
-        <a href="http://www.twitter.com"><img src="img/twitter.png" alt="twitter" title="Tweet us"></a>
-        <a href="http://www.facebook.com"><img src="img/facebook.png" alt="facebook" title="Like us"></a>
-    </article>
-</section>
+                    <label for="requests">Special Requests</label>
+                    <textarea rows="15" name="message"></textarea>
+                </fieldset>
 
-<footer>
-    <a href="#top" class="smoothScroll"><img src="img/arrow.png" alt="jump to top" title="Jump to Top"></a>
-</footer>
+                <input type="submit" name="submit" value="Send" id="submit"/>
+            </form>
+        </div>
+
+    </section>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 5.jpg"></div>
+
+    <section>
+        <img src="img/exterior.jpg" alt="dance contest" title="Don't miss out our weekly dance contest!">
+
+        <h2 id="connect">Let's go steady</h2>
+        <article>
+            <h3>Hang with us in real life</h3>
+                <p>1435 Flower Street</p>
+                <p>Glendale, CA 91201</p>
+                <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.3558327041856!2d-118.29248868478203!3d34.162818980576006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c00dc957dfd3%3A0xfec7f5fc22c4d7b0!2s1435+Flower+St%2C+Glendale%2C+CA+91201!5e0!3m2!1sen!2sus!4v1480206038885" allowfullscreen></iframe>"
+        </article>
+
+        <article>
+            <h3>Hours</h3>
+                <p>Sunday through Thursday: 11 am to 10 pm</p>
+                <p>Friday and Saturday: 11 am to 2 am</p>
+        </article>
+
+        <article class="contact">
+            <h3>Ring us</h3>
+                <a href="tel:+18885775467" title="Click to call on mobile"><img src="img/phone.png" alt="phone" title="Call me"><span class="phone"> 1.888.JR.SLIMS</span></a>
+            <h3>E-mail us</h3>
+                <a href="mailto:jack@jackrabbitslims.com"><img src="img/email.png" alt="email" title="Email me"></a>
+        </article>
+
+        <article class="contact">
+            <h3>Chill with us on social</h3>
+                <a href="http://www.twitter.com"><img src="img/twitter.png" alt="twitter" title="Tweet us"></a>
+                <a href="http://www.facebook.com"><img src="img/facebook.png" alt="facebook" title="Like us"></a>
+        </article>
+    </section>
+
+    <footer>
+        <a href="#top" class="smoothScroll"><img src="img/arrow.png" alt="jump to top" title="Jump to Top"></a>
+    </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="js/jquery.responsiveTabs.min.js"></script>
+    <script src="js/jquery.responsiveTabs.min.js"></script>
     <script src="js/smoothscroll.js"></script>
-	<script src="js/parallax.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
