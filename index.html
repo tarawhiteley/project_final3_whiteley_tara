@@ -220,43 +220,118 @@
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/car 4.jpg"></div>
 
-<section>
+<section id="reservationsClick">
     <h2 id="reservations">Reserve your favorite hot rod!</h2>
     <article>
 
     <div id="gallery" class="gallery">
         <div id="lg-wrap" class="current-image-wrapper">
             <img id="large" data-idx="0" src="img/res1.jpeg" alt="reservation">
-  </div>
+        </div>
 
-  <ul id="thumbnails" class="thumbnails">
-    <li>
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xKHjYjtqhPyoISGrUPdOaE3Z11JSoZI8_OYQhq3rv8jKonRi">
-      <img data-idx="0" src="img/res1.jpeg" alt="reservation">
-  </a></li><!--
-    --><li>
-        <a href="http://blog.cars-on-line.com/wp-content/uploads/2013/05/1957-Chrysler-300-C-Covertible.jpg">
-        <img data-idx="1" src="img/res2.jpg" alt="reservation">
-    </a></li><!--
-    --><li>
-        <a href="https://s-media-cache-ak0.pinimg.com/originals/d3/19/e9/d319e9cf93801e4f38eb0f95b36de94d.jpg">
-        <img data-idx="2" src="img/res3.jpg" alt="reservation">
-    </a></li><!--
-    --><li>
-        <a href="https://s-media-cache-ak0.pinimg.com/originals/ef/e2/72/efe27208200d4ba93a273d748acec84d.jpg">
-        <img data-idx="3" src="img/res4.jpg" alt="reservation">
-    </a></li><!--
-    --><li>
-        <a href="https://static1.squarespace.com/static/5316a542e4b0ab76f8fe62c2/t/5659f30ae4b0a63eb2c800ec/1448735502486/?format=1000w">
-        <img data-idx="4" src="img/res7.jpeg" alt="reservation">
-    </a></li><!--
-    --><li>
-        <a href="http://speednik.com/files/2014/05/rk_motors_1957_desoto_fireflite.jpg">
-        <img data-idx="5" src="img/res8.jpg" alt="reservation">
-    </a></li><!--
-    -->
-  </ul>
-</div>
+        <ul id="thumbnails" class="thumbnails">
+            <li>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xKHjYjtqhPyoISGrUPdOaE3Z11JSoZI8_OYQhq3rv8jKonRi">
+                    <img data-idx="0" src="img/res1.jpeg" alt="reservation">
+                    <p>Green Envy</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://blog.cars-on-line.com/wp-content/uploads/2013/05/1957-Chrysler-300-C-Covertible.jpg">
+                    <img data-idx="1" src="img/res2.jpg" alt="reservation">
+                    <p>Orange Crush</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://s-media-cache-ak0.pinimg.com/originals/d3/19/e9/d319e9cf93801e4f38eb0f95b36de94d.jpg">
+                    <img data-idx="2" src="img/res3.jpg" alt="reservation">
+                    <p>Black Beauty</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://s-media-cache-ak0.pinimg.com/originals/ef/e2/72/efe27208200d4ba93a273d748acec84d.jpg">
+                    <img data-idx="3" src="img/res4.jpg" alt="reservation">
+                    <p>Rosey Sue</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://static1.squarespace.com/static/5316a542e4b0ab76f8fe62c2/t/5659f30ae4b0a63eb2c800ec/1448735502486/?format=1000w">
+                    <img data-idx="4" src="img/res7.jpeg" alt="reservation">
+                    <p>Baby Blue</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://speednik.com/files/2014/05/rk_motors_1957_desoto_fireflite.jpg">
+                    <img data-idx="5" src="img/res8.jpg" alt="reservation">
+                    <p>Big Red</p>
+                </a>
+            </li>
+        </ul>
+        <button id="rsvpButton">Click Here to RSVP</button>
+    </div>
+
+    <div id="rsvpform">
+        <p>Please complete this form and we'll be in touch withint 24 hours to confirm your RSVP.</p>
+        <form method="post" action="mailto:twhiteley@ufl.edu" name="contact" id="form">
+        <fieldset>
+            <legend>Your Contact Info</legend>
+            <label for="firstName">First name:
+            </label>
+            <input type="text" name="firstName" id="firstName" size="40">
+            <label for="lastName">Last name:
+            </label>
+            <input type="text" name="lastName" id="lastName" size="40">
+            <label for="phone">Telephone:
+            <input type="tel" name="phone" id="phone" size="40">
+            </label>
+            <label for="email">Email:
+            </label>
+            <input type="email" name="email" size="40">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Preferred Date</legend>
+            <label for="preferredDate">Preferred Date:
+            </label>
+            <input type="date" name="preferredDate" id="preferredDate">
+        </fieldset>
+
+        <fieldset>
+            <legend>Which ride would you like to reserve?</legend>
+
+            <label for="new">
+            <input type="radio" name="length" id="one" value="New" />Green Envy
+            </label>
+
+            <label for="medium">
+            <input type="radio" name="length" id="two" value="Medium" />Orange Crush
+            </label>
+
+            <label for="long">
+            <input type="radio" name="length" id="three" value="Long" />Black Beauty
+            </label>
+
+            <label for="long">
+            <input type="radio" name="length" id="four" value="Long" />Rosey Sue
+            </label>
+
+            <label for="long">
+            <input type="radio" name="length" id="five" value="Long" />Baby Blue
+            </label>
+
+            <label for="long">
+            <input type="radio" name="length" id="six" value="Long" />Big Red
+            </label>
+        </fieldset>
+
+        <legend>Special Requests</legend>
+            <label for="requests">Special Requests</label>
+            <textarea rows="15" name="message"></textarea>
+
+        <input type="submit" name="submit" value="Send" id="submit"/>
+        </form>
+    </div>
+
     </article>
 </section>
 

@@ -60,9 +60,9 @@ $(document).ready(function () {
     });
 
     document.getElementById('hamburgler').addEventListener('click', checkNav);
-        window.addEventListener('keyup', function (e) {
-            if (e.keyCode === 27) closeNav();
-        }, false);
+    window.addEventListener('keyup', function (e) {
+        if (e.keyCode === 27) closeNav();
+    }, false);
 
     function checkNav() {
         if (document.body.classList.contains('hamburgler-active')) {
@@ -80,6 +80,7 @@ $(document).ready(function () {
         document.body.classList.add('hamburgler-active');
     }
 
+//RSVP scroll
     var th = document.getElementById('thumbnails');
     th.addEventListener('click', function (e) {
         var t = e.target, new_src = t.parentNode.href,
@@ -94,4 +95,15 @@ $(document).ready(function () {
         }, 50);
         e.preventDefault();
     }, false);
+
+//Popup RSVP form
+    $('#rsvpform').hide();
+
+    var reserve = document.getElementById('rsvpButton');
+    reserve.addEventListener('click', function () {
+        var myElement = document.createElement('rsvpform');
+        document.getElementById('gallery').appendChild(myElement);
+        myElement.classList.add('show');
+        console.log('I see you');
+    });
 });

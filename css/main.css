@@ -80,6 +80,10 @@ li {
     display: none;
 }
 
+.show {
+    display: block;
+}
+
 /* nav bar */
 nav li {
     list-style-type: none;
