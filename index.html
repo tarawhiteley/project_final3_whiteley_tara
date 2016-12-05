@@ -218,13 +218,7 @@
 
     <section id="reservationsClick">
         <h2 id="reservations">Reserve your favorite hot rod!</h2>
-
-        <div id="gallery" class="gallery">
-            <div id="lg-wrap" class="current-image-wrapper">
-                <img id="large" data-idx="0" src="img/res1.jpeg" alt="reservation">
-            </div>
-
-            <ul id="thumbnails" class="thumbnails">
+            <ul>
                 <li>
                     <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xKHjYjtqhPyoISGrUPdOaE3Z11JSoZI8_OYQhq3rv8jKonRi">
                         <img data-idx="0" src="img/res1.jpeg" alt="reservation">
@@ -263,7 +257,6 @@
                 </li>
             </ul>
             <button id="rsvpButton">Click Here to RSVP</button>
-        </div>
 
         <div id="rsvpform">
             <p>Please complete this form and we'll be in touch within 24 hours to confirm your RSVP.</p>
@@ -287,7 +280,7 @@
 
                 <fieldset>
                     <legend>Your Preferred Date</legend>
-                    <label for="preferredDate">Preferred Date:</label>
+                    <label for="preferredDate"></label>
                     <input type="date" name="preferredDate" id="preferredDate">
                     </fieldset>
 
@@ -316,8 +309,8 @@
                 <fieldset>
                     <legend>Special Requests</legend>
 
-                    <label for="requests">Special Requests</label>
-                    <textarea rows="15" name="message"></textarea>
+                    <label for="requests"></label>
+                    <textarea rows="10" name="message"></textarea>
                 </fieldset>
 
                 <input type="submit" name="submit" value="Send" id="submit"/>
