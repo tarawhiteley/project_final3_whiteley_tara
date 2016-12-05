@@ -62,11 +62,14 @@ $(document).ready(function () {
     });
 
 //Responsive hamburger nav Bar, upon click of the hamburger icon, enlarges to show menu, closes when the x is clicked
+
+//this locates the hamburgler element and listens for a click on that. once clicked, it runs checkNav function
     document.getElementById('hamburgler').addEventListener('click', checkNav);
+    // keyup eventListener refers to when a key is released, it will run the function (e). e.keycode implies if the keycode is 27, then run the function closeNav. keycode 27 is equivalent to the escape key, so if escape is pressed, the closeNav function will run. See below. If 27/escape is not released, then “false” means to skip this section.
     window.addEventListener('keyup', function (e) {
         if (e.keyCode === 27) closeNav();
     }, false);
-
+//this runs checkNav function -- if the hamburglar menu is active, calls the function closeNav, else if its inactive, call the function openNav
     function checkNav() {
         if (document.body.classList.contains('hamburgler-active')) {
             closeNav();
@@ -74,30 +77,14 @@ $(document).ready(function () {
             openNav();
         }
     }
-
+//stemming from above, if closeNav is called, it will remove the class hamburgler-active, closing the active menu.
     function closeNav() {
         document.body.classList.remove('hamburgler-active');
     }
-
+//stemming from above, if openNav is called, it will add the class hamburgler-active, opening the active menu.
     function openNav() {
         document.body.classList.add('hamburgler-active');
     }
-
-//RSVP image gallery
-    var th = document.getElementById('thumbnails');
-    th.addEventListener('click', function (e) {
-        var t = e.target, new_src = t.parentNode.href,
-            large = document.getElementById('large'),
-            cl = large.classList,
-            lgwrap = document.getElementById('lg-wrap');
-        lgwrap.style.backgroundImage = 'url(' + large.src + ')';
-        if (cl) cl.add('hideme');
-        window.setTimeout(function () {
-            large.src = new_src;
-            if(cl) cl.remove('hideme');
-        }, 50);
-        e.preventDefault();
-    }, false);
 
 // Custom JavaScript - Popup RSVP form
 // Reservation form starts hidden
