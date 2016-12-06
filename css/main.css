@@ -27,6 +27,7 @@ html {
 h2 {
     font-family: "jack";
     font-size: 3em;
+    padding-top: 20px;
 }
 
 header h2 {
@@ -228,16 +229,21 @@ hr {
     margin: 60px 0 0 0;
 }
 
-header img {
+.smallScreen,
+.bigScreen {
     width: 70%;
     text-align: center;
     margin: 20px;
 }
 
+.bigScreen {
+    display: none;
+}
+
 header {
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
 }
 
 article img,
@@ -324,4 +330,61 @@ input[type="submit"] {
 textarea {
     width: 80%;
     margin: auto;
+}
+
+@media (min-width: 600px) {
+    .smallScreen {
+        display: none;
+    }
+
+    .bigScreen {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+
+    section img {
+        width: 50%;
+    }
+
+    #horizontalTab,
+    #rsvpform,
+    article,
+    h2,
+    section p {
+        width: 75%;
+        margin: auto;
+    }
+
+    .contact img {
+        width: 12%;
+    }
+
+    footer img {
+        width: 5%;
+    }
+}
+
+@media (min-width: 770px) {
+    .bigScreen {
+        width: 30%;
+    }
+
+    #horizontalTab,
+    #rsvpform,
+    article,
+    h2,
+    section p {
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    #horizontalTab {
+        width: 60%;
+    }
+
+    .contact img {
+        width: 8%;
+    }
 }
