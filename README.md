@@ -6,7 +6,7 @@
 
 ## Resources
 
-- [jQuery 1/Parallax](https://github.com/pixelcog/parallax.js/) - My first jQuery plugin adds parallax scrolling to the site. My background images made it hard to see the text so I used this plugin to add interest while using simple gray backgrounds for the text sections.
+- [jQuery 1/Parallax](https://github.com/pixelcog/parallax.js/) - My first jQuery plugin adds parallax scrolling to the site. My background images made it hard to see the text so I used this plugin to add interest while using simple gray backgrounds for the text sections. At first, this was not working on mobile, but after reviewing the github issues section, I was able to determine this was because my file names had spaces in them. Once the space was removed, the parallax worked on mobile.
 - [jQuery 2/Responsive tabs](https://github.com/jellekralt/Responsive-Tabs) - My second jQuery plugin adds a responsive tab (small screen)/accordion (larger screen) functionality to the menu section. I felt this was necessary because the menu section was so long.
 - [jQuery 3/Image Gallery](https://codepen.io/thebabydino/pen/zvaGb) - This adds a basic image gallery from Codepen for my RSVP section. This jQuery features photos of the cars that are available for reservations for dinner.
 - [Custom JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - I added custom JavaScript that listens for a click on the "RSVP" button below the image gallery. Once clicked, it adds a new element that is a form for reservations. This form, when complete, will send an email to me in its current set-up. I used the Mozilla site for assistance, along with videos from class.
