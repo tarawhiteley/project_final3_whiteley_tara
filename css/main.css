@@ -27,7 +27,7 @@ html {
 h2 {
     font-family: "jack";
     font-size: 3em;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 header h2 {

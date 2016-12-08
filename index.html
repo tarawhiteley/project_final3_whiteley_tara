@@ -216,46 +216,35 @@
 
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/car4.jpg"></div>
 
-    <section id="reservationsClick">
-        <h2 id="reservations">At Jack Rabbit Slim's, you can dine in hot rod style! Pick your favorite ride as your revved up dinner table!</h2>
-            <ul>
-                <li>
-                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xKHjYjtqhPyoISGrUPdOaE3Z11JSoZI8_OYQhq3rv8jKonRi">
-                        <img data-idx="0" src="img/res1.jpeg" alt="reservation">
+    <section>
+        <h2 id="reservations">Reserve your Hot Rod!</h2>
+            <p>At Jack Rabbit Slim's, you can dine in hot rod style! Pick your favorite ride as your revved up dinner table!</p>
+                <ul id="reservationTables">
+                    <li>
+                        <img src="img/res1.jpeg" alt="reservation">
                         <p>Green Envy</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://blog.cars-on-line.com/wp-content/uploads/2013/05/1957-Chrysler-300-C-Covertible.jpg">
-                        <img data-idx="1" src="img/res2.jpg" alt="reservation">
+                    </li>
+                    <li>
+                        <img src="img/res2.jpg" alt="reservation">
                         <p>Orange Crush</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://s-media-cache-ak0.pinimg.com/originals/d3/19/e9/d319e9cf93801e4f38eb0f95b36de94d.jpg">
-                        <img data-idx="2" src="img/res3.jpg" alt="reservation">
+                    </li>
+                    <li>
+                        <img src="img/res3.jpg" alt="reservation">
                         <p>Black Beauty</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://s-media-cache-ak0.pinimg.com/originals/ef/e2/72/efe27208200d4ba93a273d748acec84d.jpg">
-                        <img data-idx="3" src="img/res4.jpg" alt="reservation">
+                    </li>
+                    <li>
+                        <img src="img/res4.jpg" alt="reservation">
                         <p>Rosey Sue</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://static1.squarespace.com/static/5316a542e4b0ab76f8fe62c2/t/5659f30ae4b0a63eb2c800ec/1448735502486/?format=1000w">
-                        <img data-idx="4" src="img/res7.jpeg" alt="reservation">
+                    </li>
+                    <li>
+                        <img src="img/res7.jpeg" alt="reservation">
                         <p>Baby Blue</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://speednik.com/files/2014/05/rk_motors_1957_desoto_fireflite.jpg">
-                        <img data-idx="5" src="img/res8.jpg" alt="reservation">
+                    </li>
+                    <li>
+                        <img src="img/res8.jpg" alt="reservation">
                         <p>Big Red</p>
-                    </a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
             <button id="rsvpButton">Click Here to RSVP</button>
 
         <div id="rsvpform">
@@ -275,7 +264,7 @@
                     <input type="tel" name="phone" id="phone">
 
                     <label for="email">Email:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="email">
                 </fieldset>
 
                 <fieldset>
@@ -288,29 +277,29 @@
                     <legend>Which ride would you like to reserve?</legend>
 
                     <label for="one"></label>
-                    <input type="radio" name="length" id="one" value="One"/>Green Envy
+                    <input type="radio" name="one" id="one" value="One"/>Green Envy
 
                     <label for="two"></label>
-                    <input type="radio" name="length" id="two" value="Two"/>Orange Crush
+                    <input type="radio" name="two" id="two" value="Two"/>Orange Crush
 
                     <label for="three"></label>
-                    <input type="radio" name="length" id="three" value="Three"/>Black Beauty
+                    <input type="radio" name="three" id="three" value="Three"/>Black Beauty
 
                     <label for="four"></label>
-                    <input type="radio" name="length" id="four" value="Four"/>Rosey Sue
+                    <input type="radio" name="four" id="four" value="Four"/>Rosey Sue
 
                     <label for="five"></label>
-                    <input type="radio" name="length" id="five" value="Five"/>Baby Blue
+                    <input type="radio" name="five" id="five" value="Five"/>Baby Blue
 
                     <label for="six"></label>
-                    <input type="radio" name="length" id="six" value="Six"/>Big Red
+                    <input type="radio" name="six" id="six" value="Six"/>Big Red
                 </fieldset>
 
                 <fieldset>
                     <legend>Special Requests</legend>
 
-                    <label for="requests"></label>
-                    <textarea rows="10" name="message"></textarea>
+                    <label for="message"></label>
+                    <textarea rows="10" name="message" id="message"></textarea>
                 </fieldset>
 
                 <input type="submit" name="submit" value="Send" id="submit"/>
