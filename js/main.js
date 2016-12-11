@@ -21,9 +21,6 @@ $(document).ready(function () {
 
     // Responsive Tabs JS - menu section allows only one section to be shown at a time
     // Starts in collapsed accordion position on scmaller screens
-    $('#responsiveTabsDemo').responsiveTabs({
-        startCollapsed: 'accordion'
-    });
     // Responds to horizontal tabs on larger screens
     var $tabs = $('#horizontalTab');
     $tabs.responsiveTabs({
@@ -31,34 +28,6 @@ $(document).ready(function () {
         startCollapsed: 'accordion',
         collapsible: 'accordion',
         setHash: true,
-        click: function (e, tab) {
-            $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');
-        },
-        activate: function (e, tab) {
-            $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
-        },
-        activateState: function (e, state) {
-            //console.log(state);
-            $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
-        }
-    });
-    $('#start-rotation').on('click', function () {
-        $tabs.responsiveTabs('startRotation', 1000);
-    });
-    $('#stop-rotation').on('click', function () {
-        $tabs.responsiveTabs('stopRotation');
-    });
-    $('#start-rotation').on('click', function () {
-        $tabs.responsiveTabs('active');
-    });
-    $('#enable-tab').on('click', function () {
-        $tabs.responsiveTabs('enable', 3);
-    });
-    $('#disable-tab').on('click', function () {
-        $tabs.responsiveTabs('disable', 3);
-    });
-    $('.select-tab').on('click', function () {
-        $tabs.responsiveTabs('activate', $(this).val());
     });
 
     //Responsive hamburger nav Bar, upon click of the hamburger icon, enlarges to show menu, closes when the x is clicked
@@ -67,7 +36,9 @@ $(document).ready(function () {
     document.getElementById('hamburgler').addEventListener('click', checkNav);
     // keyup eventListener refers to when a key is released, it will run the function (e). e.keycode implies if the keycode is 27, then run the function closeNav. keycode 27 is equivalent to the escape key, so if escape is pressed, the closeNav function will run. See below. If 27/escape is not released, then “false” means to skip this section.
     window.addEventListener('keyup', function (e) {
-        if (e.keyCode === 27) closeNav();
+        if (e.keyCode === 27) {
+            closeNav();
+        }
     }, false);
     //this runs checkNav function -- if the hamburglar menu is active, calls the function closeNav, else if its inactive, call the function openNav
     function checkNav() {
@@ -88,12 +59,11 @@ $(document).ready(function () {
 
     // Custom JavaScript - Popup RSVP form
     // Reservation form starts hidden
-    var formHide = document.getElementById('rsvpform');
-    formHide.classList.add('hide');
+    var rsvpForm = document.getElementById('rsvpform');
+    rsvpForm.classList.add('hide');
     // Upon clicking the button, form toggles visibility for completion
     var reserve = document.getElementById('rsvpButton');
     reserve.addEventListener('click', function () {
-        var myElement = document.getElementById('rsvpform');
-        myElement.classList.toggle('show');
+        rsvpForm.classList.toggle('show');
     });
 });
