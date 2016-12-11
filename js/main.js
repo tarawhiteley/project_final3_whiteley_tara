@@ -21,9 +21,6 @@ $(document).ready(function () {
 
     // Responsive Tabs JS - menu section allows only one section to be shown at a time
     // Starts in collapsed accordion position on scmaller screens
-    $('#responsiveTabsDemo').responsiveTabs({
-        startCollapsed: 'accordion'
-    });
     // Responds to horizontal tabs on larger screens
     var $tabs = $('#horizontalTab');
     $tabs.responsiveTabs({
@@ -31,34 +28,6 @@ $(document).ready(function () {
         startCollapsed: 'accordion',
         collapsible: 'accordion',
         setHash: true,
-        click: function (e, tab) {
-            $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');
-        },
-        activate: function (e, tab) {
-            $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
-        },
-        activateState: function (e, state) {
-            //console.log(state);
-            $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
-        }
-    });
-    $('#start-rotation').on('click', function () {
-        $tabs.responsiveTabs('startRotation', 1000);
-    });
-    $('#stop-rotation').on('click', function () {
-        $tabs.responsiveTabs('stopRotation');
-    });
-    $('#start-rotation').on('click', function () {
-        $tabs.responsiveTabs('active');
-    });
-    $('#enable-tab').on('click', function () {
-        $tabs.responsiveTabs('enable', 3);
-    });
-    $('#disable-tab').on('click', function () {
-        $tabs.responsiveTabs('disable', 3);
-    });
-    $('.select-tab').on('click', function () {
-        $tabs.responsiveTabs('activate', $(this).val());
     });
 
     //Responsive hamburger nav Bar, upon click of the hamburger icon, enlarges to show menu, closes when the x is clicked
