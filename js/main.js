@@ -36,7 +36,9 @@ $(document).ready(function () {
     document.getElementById('hamburgler').addEventListener('click', checkNav);
     // keyup eventListener refers to when a key is released, it will run the function (e). e.keycode implies if the keycode is 27, then run the function closeNav. keycode 27 is equivalent to the escape key, so if escape is pressed, the closeNav function will run. See below. If 27/escape is not released, then “false” means to skip this section.
     window.addEventListener('keyup', function (e) {
-        if (e.keyCode === 27) closeNav();
+        if (e.keyCode === 27) {
+            closeNav();
+        }
     }, false);
     //this runs checkNav function -- if the hamburglar menu is active, calls the function closeNav, else if its inactive, call the function openNav
     function checkNav() {
