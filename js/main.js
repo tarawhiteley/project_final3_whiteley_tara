@@ -62,7 +62,6 @@ $(document).ready(function () {
     // Upon clicking the button, form toggles visibility for completion
     var reserve = document.getElementById('rsvpButton');
     reserve.addEventListener('click', function () {
-        var myElement = document.getElementById('rsvpform');
-        myElement.classList.toggle('show');
+        rsvpForm.classList.toggle('show');
     });
 });
