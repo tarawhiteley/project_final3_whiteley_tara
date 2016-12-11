@@ -57,8 +57,8 @@ $(document).ready(function () {
 
     // Custom JavaScript - Popup RSVP form
     // Reservation form starts hidden
-    var formHide = document.getElementById('rsvpform');
-    formHide.classList.add('hide');
+    var rsvpForm = document.getElementById('rsvpform');
+    rsvpForm.classList.add('hide');
     // Upon clicking the button, form toggles visibility for completion
     var reserve = document.getElementById('rsvpButton');
     reserve.addEventListener('click', function () {
